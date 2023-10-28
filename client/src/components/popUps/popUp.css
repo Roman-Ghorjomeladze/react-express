@@ -1,0 +1,32 @@
+.absolute {
+  width: 600px;
+  height: 500px;
+  border: 1px solid grey;
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+  -webkit-box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+  -moz-box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: black;
+  align-items: center;
+  text-align: center;
+  z-index: 999;
+  color: aliceblue;
+}
+
+.absolute input {
+    min-width: 180px;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 0 8px;
+}

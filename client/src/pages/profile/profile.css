@@ -1,0 +1,57 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 77px);
+    
+}
+
+/* Style for the profile data */
+.profile {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #282A36;
+    width: 400px;
+    margin-top: 20px;
+    box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+    -webkit-box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+    -moz-box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for key-value pairs */
+.profile dl {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile dt,
+.profile dd {
+    padding: 5px;
+    margin: 0;
+}
+
+.profile dd {
+    color: rgb(211, 235, 252);
+
+}
+
+.profile dt {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* Style for the profile image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

@@ -1,24 +1,23 @@
 ## Basic walk-through of Front End App ##
-    # Pages available #
-    ## / ## Main Page
+### Pages available ###
+    * / Main Page
         * You can pick up a user to authorize with it.
         * Halft of the users are clients who has contracts for some job.
         * Another half of users are contractors that are working on client's jobs.
-    ## /dashboard ##
+    * / dashboard 
         * After picking up a user, you are redirected to dashboard.
         * On dashboard you see two tables. 
             * The first one is for Contracts signed between client and contractor.
             * The second table shows Jobs that should be done according to the contract.
         * There is a Deposit button in Contracts table which allows only clients to deposit money to contractor.
         * There is a Pay button which allows clients to pay the price of the job to contractors.
-    ## /admin ##
+    * / admin 
         * On admin page There are two type of cards
             * First shows top payed profession
             * Second shows clients with top costs + you have kind of pagination as well.
-    ## /profile ##
+    * / profile 
         * On profile page you can see your profile info
         * You have button to log out
-
 ## Features implemented in API ##
 - Request validation
     - Request validation was needed only at one place but it's a good example how I'm handling validation of request with express-validator package
@@ -60,7 +59,7 @@ The Front End app itself is not big, it only has four pages (profile, home, dash
 
 ## How to guide ##
 - Prerequisites
-    - You should have NodeJS version 18 or newer installed on your device.
+    - You should have NodeJS installed on your device. Preferably version 18 or newer.
 - Instalation
     - You should navigate to root directory and run -> npm run install:both 
         - The script installs dependencies in both Front End and API projects. You might need to wait for couple of minutes, so you have some time to grab coffe :)
@@ -73,3 +72,5 @@ The Front End app itself is not big, it only has four pages (profile, home, dash
 
 That's all, enjoy with your coffe and the website. Don't judge me because of styling, it's on ChatGPT :D
 Some day I'll add unit tests hopefully, first of all I need to find time and motivation for it :)
+
+    

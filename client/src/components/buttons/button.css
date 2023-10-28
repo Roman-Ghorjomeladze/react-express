@@ -1,0 +1,56 @@
+.selfCenterY {
+    align-self: center;
+}
+
+.cancelButton {
+    background-color: #e01c1c; /* Background color */
+    border: none; /* Remove border */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for better spacing */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Optional margin for spacing */
+  }
+    
+  .cancelButton:hover {
+    background-color: #c00b0b; /* Change background color on hover */
+  }
+  
+  /* Submit Button */
+  .submitButton {
+    background-color: #007bff; /* Background color */
+    border: none; /* Remove border */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for better spacing */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .secondaryCancelButton {
+    background-color: #511515; /* Background color */
+    border: none; /* Remove border */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for better spacing */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+  }
+  .secondarySubmitButton {
+    background-color: #3c454f; /* Background color */
+    border: none; /* Remove border */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for better spacing */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .secondaryCancelButton:hover {
+    background-color: #650d0d; /* Change background color on hover */
+  }
+  
+  .secondarySubmitButton:hover {
+    background-color: #5a636d; /* Change background color on hover */
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }

@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'agb';
+  src: local('agb'), url('../public/static/fonts/Agbalumo-Regular.ttf');
+}
+
+* {
+  font-family: agb, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #282A36;
+  color: #F8F8F2;
+}
+
+.absolute {
+  width: 600px;
+  height: 500px;
+  border: 1px solid grey;
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+  -webkit-box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+  -moz-box-shadow: -1px 0px 25px -5px rgba(69,52,52,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: black;
+  align-items: center;
+  text-align: center;
+  z-index: 999;
+}
+
+.absolute input {
+    min-width: 180px;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 0 8px;
+}
+
+.cancelButton {
+  background-color: #e01c1c; /* Background color */
+  border: none; /* Remove border */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding for better spacing */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Optional margin for spacing */
+}
+  
+.cancelButton:hover {
+  background-color: #c00b0b; /* Change background color on hover */
+}
+
+/* Submit Button */
+.submitButton {
+  background-color: #007bff; /* Background color */
+  border: none; /* Remove border */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding for better spacing */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.secondaryCancelButton {
+  background-color: #511515; /* Background color */
+  border: none; /* Remove border */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding for better spacing */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+.secondarySubmitButton {
+  background-color: #3c454f; /* Background color */
+  border: none; /* Remove border */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding for better spacing */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.secondaryCancelButton:hover {
+  background-color: #650d0d; /* Change background color on hover */
+}
+
+.secondarySubmitButton:hover {
+  background-color: #5a636d; /* Change background color on hover */
+}
+
+.submitButton:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
