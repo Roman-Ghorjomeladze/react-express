@@ -6,7 +6,6 @@ import { useFeedback } from "../../context/FeedbackContext";
 import { useAuth } from "../../context/AuthContext";
 import "./admin.css";
 import { Card } from "../../components/cards/Card";
-import { Button } from "../../stories/Button";
 
 export const AdminPage = () => {
   const [topProfession, setTopProfession] = useState<TopProfession | null>(

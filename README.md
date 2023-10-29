@@ -68,7 +68,9 @@ The Front End app itself is not big, it only has four pages (profile, home, dash
         - It will seed local sqlite database which is using file system as a source.
 - How to start
     - You should navigate to root directory and run -> npm start
-        - The script will build Front End app, after starts API and you will be able to visit website on 3001 port. 
+        - The script will build Front End app, after starts API and you will be able to visit website on 3001 port.
+- StoryBook server
+    - To start StoryBook server run npm run storybook
 
 That's all, enjoy with your coffe and the website. Don't judge me because of styling, it's on ChatGPT :D
 Some day I'll add unit tests hopefully, first of all I need to find time and motivation for it :)
