@@ -1,0 +1,82 @@
+.feedback-container {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: #655454bd;
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideIn 1s ease-in-out forwards, slideOut 1s ease-in-out reverse forwards;
+    z-index: 9999;
+    border-radius: 12px;
+}
+
+.close {
+    width: 15px;
+    height: 15px;
+    margin-top: -20px;
+    overflow: visible;
+}
+  
+@keyframes slideIn {
+    0% {
+        bottom: -60px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -60px;
+    }
+}
+.close-button {
+  background-color: rgb(51, 40, 40);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  border-radius: 50%;
+}
+
+.close-icon {
+  font-size: 20px;
+  color: #fff;
+  line-height: 0;
+}
+
+.close-button:hover .close-icon {
+  color: #ff0000; /* Change color on hover */
+}
+
+.feedbacksList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 12px;
+}
+.error { 
+    padding: 8px 0;
+    margin-right: 12px;
+    position: relative;
+}
+
+.fbSuccess {
+    color: #10d43ebd;
+}
+
+.fbError {
+    color: #fa3434bd;
+}
+
+.fbWarning {
+    color: #dbd115bd;
+}

@@ -1,0 +1,32 @@
+.searchSelect{
+    position: absolute;
+    left: 0;
+}
+
+.searchSelect input {
+    height: 40px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.searchSelect ul {
+    width: 180px;
+    max-height: 200px;
+    overflow: scroll;
+    background-color: black;
+    border-radius: 16px;
+    padding: 6px 12px;
+    text-decoration: none;
+    transition: height 0.5s ease;
+}
+
+.searchSelect ul .resultItem {
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.searchSelect ul .resultItem:hover {
+    color: blue;
+    font-size: larger;
+}

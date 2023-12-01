@@ -1,0 +1,98 @@
+.dashboard {
+    padding: 12px 18px;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #5b5a5a;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #ab8585;
+}
+
+.payBtn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.payBtn:hover {
+    background-color: #0056b3; 
+}
+
+
+.payBtn:active, .payBtn:focus {
+    outline: none;
+    background-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    gap: 16px;
+}
+
+fieldset div input {
+    cursor: pointer;
+}
+fieldset div label {
+    cursor: pointer;
+}
+
+.filtersContainer{
+    display: flex;
+    position: relative;
+    min-width: 500px;
+    justify-content: flex-end;
+}
+
+.headingCont{
+    display: flex;
+    align-items: center;
+}
+
+.headingCont span {
+    margin-left: 16px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #5b5a5a;
+}
+
+.headingCont span button {
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-left: 6px;
+    cursor: pointer;
+    padding: 2px 6px;
+}

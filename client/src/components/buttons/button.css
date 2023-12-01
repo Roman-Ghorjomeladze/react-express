@@ -1,0 +1,60 @@
+.selfCenterY {
+    align-self: center;
+}
+
+button:disabled {
+  cursor: no-drop;
+  opacity: 0.7;
+}
+
+.cancelButton {
+    background-color: #e01c1c;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+    
+  .cancelButton:hover {
+    background-color: #c00b0b;
+  }
+  
+  .submitButton {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .secondaryCancelButton {
+    background-color: #511515;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .secondarySubmitButton {
+    background-color: #3c454f;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .secondaryCancelButton:hover {
+    background-color: #650d0d;
+  }
+  
+  .secondarySubmitButton:hover {
+    background-color: #5a636d;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }

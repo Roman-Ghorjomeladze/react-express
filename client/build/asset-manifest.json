@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4de40468.css",
+    "main.js": "/static/js/main.e088536b.js",
+    "static/media/Agbalumo-Regular.ttf": "/static/media/Agbalumo-Regular.169b25c00fba6c8e1947.ttf",
+    "index.html": "/index.html",
+    "main.4de40468.css.map": "/static/css/main.4de40468.css.map",
+    "main.e088536b.js.map": "/static/js/main.e088536b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4de40468.css",
+    "static/js/main.e088536b.js"
+  ]
+}
