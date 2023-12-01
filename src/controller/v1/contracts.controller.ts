@@ -1,7 +1,6 @@
 import {Op} from 'sequelize';
 
 import { formatResponse, formatError } from "../../utils/response";
-import { CONTRACT_STATUSES } from '../../utils/constants/contract';
 import { IRequest } from '../../utils/interfaces/http.types';
 import { Response } from 'express';
 import { Contract } from '../../models/contract';

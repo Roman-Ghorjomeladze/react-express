@@ -36,6 +36,7 @@ export async function deposit(req: IRequest, res: Response) {
                     attributes: []
                 }
             ],
+            transaction,
         })
         const maxDeposit = (totalPrice[0].dataValues.total * 25 / 100);
         const isDepositMoreThan25PrcentOfJobsToPay = (totalPrice[0].dataValues.total * 25 / 100) < depositAmount;
@@ -44,7 +45,7 @@ export async function deposit(req: IRequest, res: Response) {
             return res.status(403).json(formatError(`You can deposit max ${maxDeposit.toFixed(2)} as it shouldn't be more than 25% of current unpaied jobs.`));
         }
         const newBalance = Number((balance + depositAmount).toFixed(2));
-        Profile.update({balance: newBalance}, {where: {id: profileId}});
+        await Profile.update({balance: newBalance}, {where: {id: profileId}, transaction});
         await transaction.commit();
         return res.json(formatResponse({...req.profile?.dataValues, balance: newBalance}))
     } catch (error) {

@@ -102,6 +102,7 @@ export async function payJob(req: IRequest, res: Response) {
                     ],
                 },
             ],
+            transaction,
         });
 
         if (!job) {
@@ -136,15 +137,17 @@ export async function payJob(req: IRequest, res: Response) {
         // Calculate changes of balance for both client and contractor
         const contractorsNewBalance = Number((contractor.balance + job.price).toFixed(2));
         const clientsNewBalance = Number((client.balance - job.price).toFixed(2));
-        Profile.update(
+        await Profile.update(
             { balance: clientsNewBalance },
-            { where: { id: client.id } }
-        );
-        Profile.update(
+            { where: { id: client.id },
+            transaction,
+        });
+        await Profile.update(
             { balance: contractorsNewBalance },
-            { where: { id: contractor.id } }
-        );
-        Job.update({ paid: true, paymentDate: String(new Date()) }, { where: { id: job.id } });
+            { where: { id: contractor.id },
+            transaction
+        });
+        await Job.update({ paid: true, paymentDate: String(new Date()) }, { where: { id: job.id }, transaction });
         await transaction.commit();
 
         job.paid = true;

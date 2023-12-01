@@ -9,7 +9,7 @@
         * On dashboard you see two tables. 
             * The first one is for Contracts signed between client and contractor.
             * The second table shows Jobs that should be done according to the contract.
-        * There is a Deposit button in Contracts table which allows only clients to deposit money to contractor.
+        * There is a Deposit button in client view which allows you to deposit money to account.
         * There is a Pay button which allows clients to pay the price of the job to contractors.
     * / admin 
         * On admin page There are two type of cards
