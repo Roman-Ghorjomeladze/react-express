@@ -1,4 +1,0 @@
-# If we would have some public pages that can be crowled, we can specify them here.
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow: /

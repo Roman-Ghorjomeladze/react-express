@@ -19,7 +19,6 @@ export async function deposit(req: IRequest, res: Response) {
     const transaction = await sequelize.transaction();
 
     try {
-
         const totalPrice: any = await Job.findAll({
             attributes: [[Sequelize.literal('SUM(job.price)'), 'total']],
             where: {

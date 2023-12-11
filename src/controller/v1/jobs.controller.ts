@@ -103,6 +103,7 @@ export async function payJob(req: IRequest, res: Response) {
                 },
             ],
             transaction,
+            lock: transaction.LOCK.UPDATE,
         });
 
         if (!job) {
